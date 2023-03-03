@@ -1,0 +1,55 @@
+@import "responsive-settings";
+
+$border-radius: 30px;
+$box-shadow: 0 0 20px 0 #555;
+$color-blue: #3c3f5e;
+$color-red: #ec6842;
+$color-bg: #f2f2f2;
+$color-gray: #888;
+$color-white: #fff;
+$color-black: #000;
+
+//screen-xsm 
+@media screen and (max-width: #{$screen-sm-min - 1}) {
+    :root {
+        --container-padding: 60px;
+        --font-size-1: 2rem;
+        --font-size-2: 1.7rem;
+    }
+}
+
+//screen-sm
+@media screen and (min-width: $screen-sm-min) and (max-width: #{$screen-md-min - 1}) {
+    :root {
+        --container-padding: 70px;
+        --font-size-1: 2.4rem;
+        --font-size-2: 1.8rem;
+    }
+}
+
+//screen-md
+@media screen and (min-width: $screen-md-min) and (max-width: #{$screen-lg-min - 1}) {
+    :root {
+        --container-padding: 80px;
+        --font-size-1: 2.7rem;
+        --font-size-2: 2rem;
+    }
+}
+
+//screen-lg
+@media screen and (min-width: $screen-lg-min) and (max-width: #{$screen-xl-min - 1}) {
+    :root {
+        --container-padding: 90px;
+        --font-size-1: 3rem;
+        --font-size-2: 2.2rem;
+    }
+}
+
+//screen-xl
+@media screen and (min-width: $screen-xl-min) {
+    :root {
+        --container-padding: 100px;
+        --font-size-1: 3rem;
+        --font-size-2: 2.2rem;
+    }
+}

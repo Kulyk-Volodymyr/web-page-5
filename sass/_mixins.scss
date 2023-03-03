@@ -1,0 +1,35 @@
+@mixin container {
+    margin: auto;
+    position: relative;
+    height: fit-content;
+    width: 84%;
+    max-width: 1140px;
+}
+
+@mixin animationProperties($name, $delay, $duration, $fillMode, $timingFunction) {
+    animation: {
+        name: $name;
+        delay: $delay;
+        duration: $duration;
+        fill-mode: $fillMode;
+        timing-function: $timingFunction;
+    }
+}
+
+@mixin transitionProperties($delay, $duration, $timingFunction) {
+    transition: {
+        property: all;
+        delay: $delay;
+        duration: $duration;
+        timing-function: $timingFunction;
+    }
+}
+
+@mixin section3Textblock($bgColor, $color) {
+    background-color: $bgColor;
+    border-radius: $border-radius;
+    color: $color;
+    flex: 1;
+    opacity: 0;
+    transform: scale(0.1);
+}
